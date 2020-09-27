@@ -1,0 +1,29 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'David Libre', serif;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+main.have-not-user {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+main.have-not-user h1 {
+  padding: 1rem;
+  text-align: center;
+  line-height: 48px;
+}
+
+main.have-user {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Creep Score</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <% if (user?.name) { %>
+      <main class="have-user">
+        <div>
+          <h1>Bem vindo, <%= user.name %></h1>
+        </div>
+        <div>
+          Seu farm atual é <%= user.getCurrentCreepScore() %> o farm perfeito é <%= user.getPerfectCreepScore() %>
+        </div>
+      </main>
+    <% } else { %>
+      <main class="have-not-user">
+        <h1>Você precisa entrar em partida para que possamos coletar seus dados.</h1>
+      </main>
+    <% } %>
+  </body>
+</html>
